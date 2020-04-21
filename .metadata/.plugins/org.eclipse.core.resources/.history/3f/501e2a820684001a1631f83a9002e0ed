@@ -10,7 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import cucumber.api.DataTable;
 import org.junit.Assert;
 
-public class ContactUs_Page extends BasePage {
+public class ContactUs_Page extends BasePage{
 	public @FindBy(xpath = "//input[@name='first_name']") WebElement textfield_FirstName;
 	public @FindBy(xpath = "//input[@name='last_name']") WebElement textfield_LastName;
 	public @FindBy(xpath = "//input[@name='email']") WebElement textfield_EmailAddress;
@@ -20,7 +20,7 @@ public class ContactUs_Page extends BasePage {
 	public ContactUs_Page() throws IOException {
 		super();
 	}
-
+	
 	public ContactUs_Page getContactUsPage() throws IOException {
 		getDriver().get("http://webdriveruniversity.com/Contact-Us/contactus.html");
 		return new ContactUs_Page();
@@ -30,29 +30,29 @@ public class ContactUs_Page extends BasePage {
 		sendKeysToWebElement(textfield_FirstName, "Petq");
 		return new ContactUs_Page();
 	}
-
+	
 	public ContactUs_Page enterLastName(DataTable dataTable, int row, int column) throws Exception {
 		List<List<String>> data = dataTable.raw();
 		sendKeysToWebElement(textfield_LastName, data.get(row).get(column));
 		return new ContactUs_Page();
 	}
-
+	
 	public ContactUs_Page enterEmailAddress(String email) throws Exception {
 		sendKeysToWebElement(textfield_EmailAddress, email);
 		return new ContactUs_Page();
 	}
-
+	
 	public ContactUs_Page enterComments(DataTable dataTable, int row, int column) throws Exception {
 		List<List<String>> data = dataTable.raw();
 		sendKeysToWebElement(textfield_Message, data.get(row).get(column));
 		return new ContactUs_Page();
 	}
-
+	
 	public ContactUs_Page clickOnSubmitButton() throws Exception {
 		waitAndClickElement(button_Submit);
 		return new ContactUs_Page();
 	}
-
+	
 	public ContactUs_Page confirmContactUsFormSubmissionWasSuccesful() throws Exception {
 		WebElement thanksContactUsPage = getDriver().findElement(By.xpath("//div[@id='contact_reply']/h1[.='Thank You for your Message!']"))
 		WaitUntilWebElementIsVisible(textfield_Message);
