@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="cucumber.api.CucumberOptions"/>
-    <fullyQualifiedTypeName name="junit.framework.Assert"/>
     <fullyQualifiedTypeName name="cucumber.api.java.en.And"/>
     <fullyQualifiedTypeName name="cucumber.api.DataTable"/>
     <fullyQualifiedTypeName name="cucumber.api.java.en.Given"/>
@@ -11,10 +10,8 @@
     <fullyQualifiedTypeName name="cucumber.deps.com.thoughtworks.xstream.io.path.Path"/>
     <fullyQualifiedTypeName name="java.nio.file.Paths"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.util.Assert"/>
     <fullyQualifiedTypeName name="org.junit.Assert"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.remote.DesiredCapabilities"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
@@ -28,4 +25,10 @@
     <fullyQualifiedTypeName name="cucumber.api.java.After"/>
     <fullyQualifiedTypeName name="utils.DriverFactory"/>
     <fullyQualifiedTypeName name="utils.ReadConfigFile"/>
+    <fullyQualifiedTypeName name="pageObjects.ContactUs_Page"/>
+    <fullyQualifiedTypeName name="pageObjects.Products_Page"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="junit.framework.Assert"/>
 </qualifiedTypeNameHistroy>
