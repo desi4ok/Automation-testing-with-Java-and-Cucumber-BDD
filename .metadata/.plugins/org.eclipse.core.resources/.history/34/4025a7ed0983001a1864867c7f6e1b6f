@@ -1,0 +1,27 @@
+package utils;
+
+import org.openqa.selenium.WebDriver;
+
+public class DriverFactory {
+	
+	public static WebDriver driver;
+	try {
+	//Read Config
+	ReadConfigFile file = new ReadConfigFile();
+	String browserName = file.getBrowser();
+	
+	switch (browserName) {
+	
+		case "firefox":
+			//code
+			
+		case "chrome":
+			//code
+			
+	}
+	} catch (Exception e) {
+		
+	} finally {
+		
+	}
+}

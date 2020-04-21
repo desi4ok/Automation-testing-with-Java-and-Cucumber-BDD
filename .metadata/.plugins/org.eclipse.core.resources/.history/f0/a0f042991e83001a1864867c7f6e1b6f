@@ -1,0 +1,12 @@
+package utils;
+
+public class Constant {
+	/** Config Properties File **/
+	public final static String CONFIG_PROPERTIES_DIRECTORY = "";
+	
+	public final static String GECKO_PROPERTIES_DIRECTORY = System.getProperty("user.dir") + "\\src\\test\\java\\resources\\others\\geckodriver.exe";
+	
+	public final static String CHROME_PROPERTIES_DIRECTORY = System.getProperty("user.dir") + "\\src\\test\\java\\resources\\others\\chromedriver.exe";
+
+
+}
