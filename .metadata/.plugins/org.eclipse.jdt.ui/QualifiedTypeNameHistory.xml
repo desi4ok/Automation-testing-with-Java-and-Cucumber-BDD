@@ -20,15 +20,19 @@
     <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.util.Properties"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="cucumber.api.java.Before"/>
     <fullyQualifiedTypeName name="cucumber.api.java.After"/>
     <fullyQualifiedTypeName name="utils.DriverFactory"/>
     <fullyQualifiedTypeName name="utils.ReadConfigFile"/>
     <fullyQualifiedTypeName name="pageObjects.ContactUs_Page"/>
-    <fullyQualifiedTypeName name="pageObjects.Products_Page"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="junit.framework.Assert"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="pageObjects.BasePage"/>
+    <fullyQualifiedTypeName name="pageObjects.Products_Page"/>
+    <fullyQualifiedTypeName name="cucumber.api.Scenario"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
 </qualifiedTypeNameHistroy>

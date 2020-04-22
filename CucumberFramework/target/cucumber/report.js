@@ -7,11 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 10926019300,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 9603129800,
+  "duration": 5646710300,
   "status": "passed"
 });
 formatter.scenario({
@@ -80,57 +76,55 @@ formatter.match({
   "location": "ContactUsSteps.i_access_webdriveruniversity_contact_us_form()"
 });
 formatter.result({
-  "duration": 576250600,
+  "duration": 1252282200,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactUsSteps.i_enter_a_valid_first_name()"
 });
 formatter.result({
-  "duration": 3099787300,
+  "duration": 268038800,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactUsSteps.i_enter_a_valid_last_name(DataTable)"
 });
 formatter.result({
-  "duration": 87242800,
+  "duration": 161026400,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactUsSteps.i_enter_a_valid_email_address()"
 });
 formatter.result({
-  "duration": 40900,
+  "duration": 206988400,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactUsSteps.i_enter_comments(DataTable)"
 });
 formatter.result({
-  "duration": 53600,
+  "duration": 240675300,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactUsSteps.i_click_on_the_submit_button()"
 });
 formatter.result({
-  "duration": 32400,
+  "duration": 982024600,
   "status": "passed"
 });
 formatter.match({
   "location": "ContactUsSteps.the_information_should_successfully_be_submitted_via_the_contact_us_form()"
 });
 formatter.result({
-  "duration": 30800,
-  "status": "passed"
+  "duration": 65226600,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c...nkyouforyourmessage![5]\u003e but was:\u003c...nkyouforyourmessage![]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat pageObjects.ContactUs_Page.confirmContactUsFormSubmissionWasSuccesful(ContactUs_Page.java:59)\r\n\tat stepDefinitions.ContactUsSteps.the_information_should_successfully_be_submitted_via_the_contact_us_form(ContactUsSteps.java:45)\r\n\tat ✽.Then the information should successfully be submitted via the contact us form(contactUs.feature:12)\r\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 658336500,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 703247800,
+  "duration": 1878782300,
   "status": "passed"
 });
 formatter.uri("products.feature");
@@ -151,12 +145,12 @@ formatter.scenarioOutline({
 });
 formatter.step({
   "line": 4,
-  "name": "user navigates to \u003c\"url\"\u003e website",
+  "name": "user navigates to \"\u003curl\u003e\" website",
   "keyword": "Given "
 });
 formatter.step({
   "line": 5,
-  "name": "user clicks on \u003c\"button\"\u003e",
+  "name": "user clicks on \"\u003cbutton\u003e\"",
   "keyword": "When "
 });
 formatter.step({
@@ -181,7 +175,7 @@ formatter.examples({
     {
       "cells": [
         "http://webdriveruniversity.com/Page-Object-Model/products.html",
-        "container-special-offers"
+        "#container-special-offers"
       ],
       "line": 10,
       "id": "products;validate-promo-code-alert-is-visible-when-clicking-on-the-special-offers-link;;2"
@@ -190,11 +184,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 9628410800,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 9680476500,
+  "duration": 4847916800,
   "status": "passed"
 });
 formatter.scenario({
@@ -207,12 +197,18 @@ formatter.scenario({
 });
 formatter.step({
   "line": 4,
-  "name": "user navigates to \u003c\"url\"\u003e website",
+  "name": "user navigates to \"http://webdriveruniversity.com/Page-Object-Model/products.html\" website",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "Given "
 });
 formatter.step({
   "line": 5,
-  "name": "user clicks on \u003c\"button\"\u003e",
+  "name": "user clicks on \"#container-special-offers\"",
+  "matchedColumns": [
+    1
+  ],
   "keyword": "When "
 });
 formatter.step({
@@ -223,42 +219,40 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "url",
-      "offset": 20
+      "val": "http://webdriveruniversity.com/Page-Object-Model/products.html",
+      "offset": 19
     }
   ],
   "location": "ProductSteps.user_navigates_to_website(String)"
 });
 formatter.result({
-  "duration": 3792400,
+  "duration": 1290303900,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "button",
-      "offset": 17
+      "val": "#container-special-offers",
+      "offset": 16
     }
   ],
   "location": "ProductSteps.user_clicks_on(String)"
 });
 formatter.result({
-  "duration": 93600,
+  "duration": 264991200,
   "status": "passed"
 });
 formatter.match({
   "location": "ProductSteps.user_should_be_presented_with_a_promo_alert()"
 });
 formatter.result({
-  "duration": 40400,
-  "status": "passed"
+  "duration": 15939574200,
+  "error_message": "java.lang.AssertionError: Unable to wait and click on the WebElement, using locator: \u003cProxy element for: DefaultElementLocator \u0027By.xpath: //button[text()\u003d\u0027Proceed\u0027]5\u0027\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat pageObjects.BasePage.waitAndClickElement(BasePage.java:45)\r\n\tat pageObjects.Products_Page.clickOnProceedButton_Popup(Products_Page.java:19)\r\n\tat stepDefinitions.ProductSteps.user_should_be_presented_with_a_promo_alert(ProductSteps.java:28)\r\n\tat ✽.Then user should be presented with a promo alert(products.feature:6)\r\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 653787800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 720354100,
+  "duration": 1750340300,
   "status": "passed"
 });
 });

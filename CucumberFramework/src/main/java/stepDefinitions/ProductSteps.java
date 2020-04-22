@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 
 import cucumber.api.java.en.Given;
@@ -16,12 +18,13 @@ public class ProductSteps extends DriverFactory{
 
 	@When("^user clicks on \"([^\"]*)\"$")
 	public void user_clicks_on(String locator) throws InterruptedException {
+		basePage.WaitUntilWebElementIsVisibleUsingByLocator(By.cssSelector(locator));
 		getDriver().findElement(By.cssSelector(locator)).click();
-	    Thread.sleep(3000);
 	}
 
 	@Then("^user should be presented with a promo alert$")
-	public void user_should_be_presented_with_a_promo_alert() {
-		getDriver().findElement(By.xpath("//button[text()='Proceed']")).click();
-	}
+	public void user_should_be_presented_with_a_promo_alert() throws IOException, InterruptedException {
+		productsPage.printSpecialOfferVoucherCode();
+		productsPage.clickOnProceedButton_Popup();
+		}
 }
